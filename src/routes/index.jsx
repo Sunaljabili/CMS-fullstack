@@ -7,10 +7,9 @@ import AdminAddCountry from "../pages/Admin/Add-country";
 import ClienRoot from "../pages/Client";
 import Home from "../pages/Client/Home";
 import About from "../pages/Client/About";
-import { element } from "prop-types";
 import Contact from "../pages/Client/Contact";
-import Countries from "../pages/Client/Countries";
 import CountryDetail from "../pages/Client/CountryDetail";
+import ClientCountries from "../pages/Client/Countries";
 
 export const ROUTES = [
   // admin root
@@ -60,7 +59,7 @@ export const ROUTES = [
         },
         {
             path:"countries",
-            element:<Countries/>
+            element:<ClientCountries/>
         },
         {
             path:"countries/:id",
